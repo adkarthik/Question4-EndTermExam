@@ -75,6 +75,14 @@ class Account {
         System.out.println();
     }
     int debit(Integer debit) {
-         return bal = bal - debit;
+    	if(bal<debit)
+    	{
+    		System.out.print( "Insufficient Balance\n");
+    		return bal = bal;
+   	    }
+    	else
+    	{
+    		return bal = bal - debit;
+    	}
     }
 }
